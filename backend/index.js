@@ -24,7 +24,7 @@ app.get("/todos", async (req, res) => {
 // get a todo:
 app.get("/todos/:id", (req, res) => {
   try {
-    const { id } = req.params;
+    const id = parseInt(req.params.id);
     pool.query("SELECT * FROM todos WHERE id = $1", [id], (err, result) => {
       if (err) throw err;
 
@@ -56,7 +56,7 @@ app.post("/todos", (req, res) => {
 // update a todo:
 app.put("/todos/:id", (req, res) => {
   try {
-    const { id } = req.params;
+    const id = parseInt(req.params.id);
     const { description } = req.body;
     pool.query(
       "UPDATE todos SET description = $2 WHERE id = $1",
@@ -77,7 +77,7 @@ app.put("/todos/:id", (req, res) => {
 // delete a todo:
 app.delete("/todos/:id", (req, res) => {
   try {
-    const { id } = req.params;
+    const id = parseInt(req.params.id);
     pool.query("DELETE FROM todos WHERE id = $1", [id], (err, result) => {
       if (err) throw err;
 
