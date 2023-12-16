@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run dev
+
+PATH: 
+  C:\Users\User\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\User\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Common Files\Autodesk Shared;C:\Program Files (x86)\Autodesk\Backburner;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\User\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\User\AppData\Local\Programs\Python\Python311;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Invariant Violation: Script must exist
+      at invariant (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:2318:15)
+      at C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:61545:11
+      at Generator.next (<anonymous>)
+      at step (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:328:14
+      at new Promise (<anonymous>)
+      at new F (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:5305:28)
+      at C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:307:12
+      at realRunCommand (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:61630:23)
+      at action.action (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:61691:16)
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": ""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.18.2",
+      "nodemon": "^3.0.2",
+      "pg": "^8.11.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
